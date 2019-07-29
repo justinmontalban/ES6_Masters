@@ -45,6 +45,7 @@ let getWinners = (contestant,noOfWinners) => {
 
 const winners = arrageFromHighestScore(contestant);
 let counterRanking = 0;
+	console.log('The winners are: ');
 for(score =scoreOverRate; score >= 0; score--)
 {
 
