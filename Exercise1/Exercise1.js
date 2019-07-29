@@ -1,4 +1,4 @@
-const sentence ='The quick brown QA jumps over the lazy Dev.';
+const sentence ='Th';
 
 const vowels = 'aeiou';
 const consonants = 'bcdfghjklmnpqrstvxzwy';
@@ -39,11 +39,11 @@ let processSentence = sentence => {
 const { vowelsCount, consonantCount } = getNoOfVowelsAndConsonants(sentence);
 
 const words = getNoOfWords(sentence);
-
-
+const withVowel = ` Number of vowel(s) found: ${vowelsCount}`;
+const withConsonant = ` Number of consonant(s) found: ${consonantCount}`;
 	console.info(`  Number of word(s) found: ${words} 
-  Number of vowel(s) found: ${(vowelsCount >= 1) ? vowelsCount : ''}
-  Number of consonant(s) found: ${(consonantCount >= 1) ? consonantCount : ''}`);	
+  ${(vowelsCount >= 1) ? withVowel : ''}
+   ${(consonantCount >= 1) ? withConsonant: ''}`);	
 };
 
 processSentence(sentence);
