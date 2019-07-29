@@ -30,7 +30,7 @@ const contestant = [
 		
 	}
 ]
-const ranking = ['(1st)','(2nd)','(3rd)'];
+const ranking = ['(1st)','(2nd)','(3rd)','th'];
 const noOfWinners = 3;
 const scoreOverRate = 10;
 
@@ -63,7 +63,7 @@ for(score =scoreOverRate; score >= 0; score--)
        
        }
        }
-     if(counterRanking >= 3)
+     if(counterRanking >= noOfWinners)
      break;
 }
 };
